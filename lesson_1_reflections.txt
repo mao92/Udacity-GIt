@@ -1,0 +1,25 @@
+在bash中添加sublime启动命令
+I kept getting bash: subl: C:/Program command not found
+
+or something like that
+
+I found my problem ended up being I had my slashes going the incorrect way, and I found if you have spaces in your file path, you have to add a slash everytime you have a space and it will fix the problem.
+
+I ended up typing
+
+echo 'alias subl="C:/Program\ Files/Sublime\ Text\ 3/subl.exe"' >> ~/.bashrc
+
+then subl
+
+and sublime text was opened.
+
+My original file path was-
+
+C:\Program Files\Sublime Text 3
+
+so make sure you have your slashes going the correct way, and if you have spaces in your file path, to add the necessary slash after a word.
+
+I'm on windows 10 using sublime text 3 and git bash
+
+Hopefully this saves someone else a lot of time.
+
